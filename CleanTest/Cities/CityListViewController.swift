@@ -17,11 +17,11 @@ protocol CityListDisplayLogic: class
   func displaySomething(viewModel: CityList.Something.ViewModel)
 }
 
-class CityListViewController: UIViewController, CityListDisplayLogic
+class CityListViewController: UITableViewController, CityListDisplayLogic
 {
   var interactor: CityListBusinessLogic?
   var router: (NSObjectProtocol & CityListRoutingLogic & CityListDataPassing)?
-
+    private var cities:[City] = []
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -69,6 +69,7 @@ class CityListViewController: UIViewController, CityListDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CityCell")
     doSomething()
   }
   
@@ -84,6 +85,26 @@ class CityListViewController: UIViewController, CityListDisplayLogic
   
   func displaySomething(viewModel: CityList.Something.ViewModel)
   {
+    cities = viewModel.items
+    tableView.reloadData()
     //nameTextField.text = viewModel.name
   }
+}
+
+extension CityListViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cities.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath)
+        let city = cities[indexPath.row]
+        cell.textLabel?.text = city.name
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        interactor?.name = cities[indexPath.row].code
+        router?.routeToFlights(segue: nil)
+    }
 }

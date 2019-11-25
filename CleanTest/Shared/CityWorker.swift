@@ -20,7 +20,7 @@ struct City: Decodable {
 
 class CityWorker
 {
-    private var cities: [City] = []
+    private(set) var cities: [City] = []
     
     init(filename: String) {
         let url = Bundle.main.url(forResource: filename, withExtension: "json")!

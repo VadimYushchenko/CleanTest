@@ -14,7 +14,7 @@ import UIKit
 
 @objc protocol FlightRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func routeToCityList(segue: UIStoryboardSegue?)
 }
 
 protocol FlightDataPassing
@@ -29,32 +29,34 @@ class FlightRouter: NSObject, FlightRoutingLogic, FlightDataPassing
   
   // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+  func routeToCityList(segue: UIStoryboardSegue?)
+  {
+    if let segue = segue {
+//      let destinationVC = segue.destination as! SomewhereViewController
+//      var destinationDS = destinationVC.router!.dataStore!
+//      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+    } else {
+//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//      let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
+        let destinationVC = CityListViewController(nibName: nil, bundle: nil)
+//            viewController?.parent as! ContainerViewController
+      var destinationDS = destinationVC.router!.dataStore!
+//      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+      navigateToSomewhere(source: viewController!, destination: destinationVC)
+    }
+  }
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: FlightViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
+  func navigateToSomewhere(source: FlightViewController, destination: UIViewController)
+  {
+    source.show(destination, sender: nil)
+  }
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: FlightDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+//  func passDataToSomewhere(source: FlightDataStore, destination: inout SomewhereDataStore)
+//  {
+//    destination.name = source.name
+//  }
 }

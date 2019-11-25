@@ -50,7 +50,7 @@ struct URLEncoder: ParameterEncoder {
 
                if var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false), !parameters.isEmpty {
                    let percentEncodedQuery = (urlComponents.percentEncodedQuery.map { $0 + "&" } ?? "") + query(parameters)
-                   urlComponents.percentEncodedQuery = percentEncodedQuery
+                urlComponents.percentEncodedQuery = percentEncodedQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
                    urlRequest.url = urlComponents.url
                }
 

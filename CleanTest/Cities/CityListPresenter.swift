@@ -25,7 +25,7 @@ class CityListPresenter: CityListPresentationLogic
   
   func presentSomething(response: CityList.Something.Response)
   {
-    let viewModel = CityList.Something.ViewModel()
+    let viewModel = CityList.Something.ViewModel(items: response.items)
     viewController?.displaySomething(viewModel: viewModel)
   }
 }

@@ -16,20 +16,28 @@ protocol FlightBusinessLogic
 {
     func fetchFlights(request: Flight.List.Request)
     func getCity(at index: Int)
+    var name: String { get }
 }
 
 protocol FlightDataStore
 {
-  //var name: String { get set }
+  var name: String { get set }
 }
 
 class FlightInteractor: FlightBusinessLogic, FlightDataStore
 {
+    
+    
   var presenter: FlightPresentationLogic?
   var worker: FlightWorker?
     private var fligths: [FlightResponse] = []
     var cityWorker: CityWorker = CityWorker(filename: "cities")
-  
+    var name: String = "" {
+        didSet {
+            let request = Flight.List.Request(source: name)
+            fetchFlights(request: request)
+        }
+    }
   // MARK: Do something
   
   func fetchFlights(request: Flight.List.Request)
@@ -46,6 +54,7 @@ class FlightInteractor: FlightBusinessLogic, FlightDataStore
         let flight = fligths[index]
         let name = cityWorker[flight.destination] ?? flight.destination
         let response = Flight.GetCity.Response(city: name)
+//        self.name = name
         presenter?.presentWeather(response: response)
     }
 }

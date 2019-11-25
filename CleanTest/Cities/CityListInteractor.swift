@@ -14,28 +14,26 @@ import UIKit
 
 protocol CityListBusinessLogic
 {
+    var name: String { get set }
   func doSomething(request: CityList.Something.Request)
 }
 
 protocol CityListDataStore
 {
-  //var name: String { get set }
+  var name: String { get set }
 }
 
 class CityListInteractor: CityListBusinessLogic, CityListDataStore
 {
   var presenter: CityListPresentationLogic?
-  var worker: CityListWorker?
-  //var name: String = ""
+  var worker: CityWorker = CityWorker(filename: "cities")
+  var name: String = ""
   
   // MARK: Do something
   
   func doSomething(request: CityList.Something.Request)
   {
-    worker = CityListWorker()
-    worker?.doSomeWork()
-    
-    let response = CityList.Something.Response()
+    let response = CityList.Something.Response(items: worker.cities)
     presenter?.presentSomething(response: response)
   }
 }

@@ -85,6 +85,7 @@ class FlightViewController: UITableViewController, FlightDisplayLogic
     private func setup(table: UITableView){
         let nib = UINib(nibName: "FlightTableViewCell", bundle: nil)
         table.register(nib, forCellReuseIdentifier: "FlightTableViewCell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "CityCell")
         table.delegate = self
         table.dataSource = self
         
@@ -96,7 +97,7 @@ class FlightViewController: UITableViewController, FlightDisplayLogic
   
   func fetchFlights()
   {
-    guard let city = sourceCity else { return  }
+    guard let city = interactor?.name, city.isEmpty == false else { return  }
     
     let request = Flight.List.Request(source: city)
     interactor?.fetchFlights(request: request)
@@ -115,16 +116,26 @@ class FlightViewController: UITableViewController, FlightDisplayLogic
 //MARK: - Table DataSource
 extension FlightViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return flights.count
+        return flights.count + 1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath)
+            if let city = interactor?.name {
+                cell.textLabel?.text = city.isEmpty == true ? "Choose city" : city
+            }else {
+                cell.textLabel?.text = "Choose city"
+            }
+            return cell
+        }else {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FlightTableViewCell", for: indexPath) as! FlightTableViewCell
-        let flight = flights[indexPath.row]
+        let flight = flights[indexPath.row - 1]
         cell.airline.text = flight.airline
         cell.price.text = flight.price
         cell.city.text = flight.destination
         cell.transfer.text = flight.transfers
         return cell
+        }
     }
 }
 
@@ -136,6 +147,10 @@ extension FlightViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        interactor?.getCity(at: indexPath.row)
+        if indexPath.row == 0 {
+            router?.routeToCityList(segue: nil)
+        }else {
+            interactor?.getCity(at: indexPath.row - 1)
+        }
     }
 }

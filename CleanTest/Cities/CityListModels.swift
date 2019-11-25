@@ -23,9 +23,11 @@ enum CityList
     }
     struct Response
     {
+        var items: [City]
     }
     struct ViewModel
     {
+        var items: [City]
     }
   }
 }
