@@ -15,6 +15,39 @@
 		666DAC1923882EAA00535C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666DAC1723882EAA00535C16 /* LaunchScreen.storyboard */; };
 		666DAC2423882EAA00535C16 /* CleanTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC2323882EAA00535C16 /* CleanTestTests.swift */; };
 		666DAC2F23882EAA00535C16 /* CleanTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC2E23882EAA00535C16 /* CleanTestUITests.swift */; };
+		666DAC4E23883F3000535C16 /* CityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4823883F3000535C16 /* CityListPresenter.swift */; };
+		666DAC4F23883F3000535C16 /* CityListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4923883F3000535C16 /* CityListWorker.swift */; };
+		666DAC5023883F3000535C16 /* CityListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4A23883F3000535C16 /* CityListRouter.swift */; };
+		666DAC5123883F3000535C16 /* CityListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4B23883F3000535C16 /* CityListModels.swift */; };
+		666DAC5223883F3000535C16 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4C23883F3000535C16 /* CityListViewController.swift */; };
+		666DAC5323883F3000535C16 /* CityListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC4D23883F3000535C16 /* CityListInteractor.swift */; };
+		666DAC6423883F9D00535C16 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC6323883F9D00535C16 /* Network.swift */; };
+		666DAC75238869B500535C16 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC74238869B300535C16 /* WeatherResponse.swift */; };
+		666DAC92238B1B5300535C16 /* ContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC8C238B1B5300535C16 /* ContainerPresenter.swift */; };
+		666DAC93238B1B5300535C16 /* ContainerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC8D238B1B5300535C16 /* ContainerWorker.swift */; };
+		666DAC94238B1B5300535C16 /* ContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC8E238B1B5300535C16 /* ContainerRouter.swift */; };
+		666DAC95238B1B5300535C16 /* ContainerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC8F238B1B5300535C16 /* ContainerModels.swift */; };
+		666DAC96238B1B5300535C16 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC90238B1B5300535C16 /* ContainerViewController.swift */; };
+		666DAC97238B1B5300535C16 /* ContainerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC91238B1B5300535C16 /* ContainerInteractor.swift */; };
+		666DAC9F238B1B7F00535C16 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC99238B1B7F00535C16 /* WeatherPresenter.swift */; };
+		666DACA0238B1B7F00535C16 /* WeatherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC9A238B1B7F00535C16 /* WeatherWorker.swift */; };
+		666DACA1238B1B7F00535C16 /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC9B238B1B7F00535C16 /* WeatherRouter.swift */; };
+		666DACA2238B1B7F00535C16 /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC9C238B1B7F00535C16 /* WeatherModels.swift */; };
+		666DACA3238B1B7F00535C16 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC9D238B1B7F00535C16 /* WeatherViewController.swift */; };
+		666DACA4238B1B7F00535C16 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DAC9E238B1B7F00535C16 /* WeatherInteractor.swift */; };
+		666DACAB238B1B9900535C16 /* FlightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACA5238B1B9900535C16 /* FlightPresenter.swift */; };
+		666DACAC238B1B9900535C16 /* FlightWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACA6238B1B9900535C16 /* FlightWorker.swift */; };
+		666DACAD238B1B9900535C16 /* FlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACA7238B1B9900535C16 /* FlightRouter.swift */; };
+		666DACAE238B1B9900535C16 /* FlightModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACA8238B1B9900535C16 /* FlightModels.swift */; };
+		666DACAF238B1B9900535C16 /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACA9238B1B9900535C16 /* FlightViewController.swift */; };
+		666DACB0238B1B9900535C16 /* FlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACAA238B1B9900535C16 /* FlightInteractor.swift */; };
+		666DACB4238B298000535C16 /* FlightAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACB3238B297F00535C16 /* FlightAPI.swift */; };
+		666DACB7238B364400535C16 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DACB5238B364400535C16 /* FlightTableViewCell.swift */; };
+		666DACB8238B364400535C16 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666DACB6238B364400535C16 /* FlightTableViewCell.xib */; };
+		66C20C1A238BD0D30047B446 /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C20C19238BD0D30047B446 /* UIView+Pin.swift */; };
+		66C20C1C238BDAAD0047B446 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C20C1B238BDAAD0047B446 /* WeatherAPI.swift */; };
+		66C20C1E238BE36A0047B446 /* CityWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C20C1D238BE36A0047B446 /* CityWorker.swift */; };
+		66C20C20238BE5AD0047B446 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 66C20C1F238BE5AC0047B446 /* cities.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +82,39 @@
 		666DAC2A23882EAA00535C16 /* CleanTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		666DAC2E23882EAA00535C16 /* CleanTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanTestUITests.swift; sourceTree = "<group>"; };
 		666DAC3023882EAA00535C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666DAC4823883F3000535C16 /* CityListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListPresenter.swift; sourceTree = "<group>"; };
+		666DAC4923883F3000535C16 /* CityListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListWorker.swift; sourceTree = "<group>"; };
+		666DAC4A23883F3000535C16 /* CityListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListRouter.swift; sourceTree = "<group>"; };
+		666DAC4B23883F3000535C16 /* CityListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListModels.swift; sourceTree = "<group>"; };
+		666DAC4C23883F3000535C16 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		666DAC4D23883F3000535C16 /* CityListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListInteractor.swift; sourceTree = "<group>"; };
+		666DAC6323883F9D00535C16 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		666DAC74238869B300535C16 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		666DAC8C238B1B5300535C16 /* ContainerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPresenter.swift; sourceTree = "<group>"; };
+		666DAC8D238B1B5300535C16 /* ContainerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWorker.swift; sourceTree = "<group>"; };
+		666DAC8E238B1B5300535C16 /* ContainerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRouter.swift; sourceTree = "<group>"; };
+		666DAC8F238B1B5300535C16 /* ContainerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerModels.swift; sourceTree = "<group>"; };
+		666DAC90238B1B5300535C16 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		666DAC91238B1B5300535C16 /* ContainerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerInteractor.swift; sourceTree = "<group>"; };
+		666DAC99238B1B7F00535C16 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		666DAC9A238B1B7F00535C16 /* WeatherWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWorker.swift; sourceTree = "<group>"; };
+		666DAC9B238B1B7F00535C16 /* WeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		666DAC9C238B1B7F00535C16 /* WeatherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
+		666DAC9D238B1B7F00535C16 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		666DAC9E238B1B7F00535C16 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		666DACA5238B1B9900535C16 /* FlightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
+		666DACA6238B1B9900535C16 /* FlightWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWorker.swift; sourceTree = "<group>"; };
+		666DACA7238B1B9900535C16 /* FlightRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
+		666DACA8238B1B9900535C16 /* FlightModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModels.swift; sourceTree = "<group>"; };
+		666DACA9238B1B9900535C16 /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		666DACAA238B1B9900535C16 /* FlightInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
+		666DACB3238B297F00535C16 /* FlightAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAPI.swift; sourceTree = "<group>"; };
+		666DACB5238B364400535C16 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlightTableViewCell.swift; path = Cells/FlightTableViewCell.swift; sourceTree = "<group>"; };
+		666DACB6238B364400535C16 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FlightTableViewCell.xib; path = Cells/FlightTableViewCell.xib; sourceTree = "<group>"; };
+		66C20C19238BD0D30047B446 /* UIView+Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
+		66C20C1B238BDAAD0047B446 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		66C20C1D238BE36A0047B446 /* CityWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWorker.swift; sourceTree = "<group>"; };
+		66C20C1F238BE5AC0047B446 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +165,20 @@
 		666DAC0B23882EA600535C16 /* CleanTest */ = {
 			isa = PBXGroup;
 			children = (
+				666DACB2238B295700535C16 /* API */,
+				666DAC98238B1B6600535C16 /* Weather */,
+				666DACB1238B1BA200535C16 /* Flight */,
+				666DAC8B238B1B2D00535C16 /* Container */,
+				666DAC6223883F7C00535C16 /* Shared */,
 				666DAC0C23882EA600535C16 /* AppDelegate.swift */,
 				666DAC0E23882EA600535C16 /* SceneDelegate.swift */,
 				666DAC1023882EA600535C16 /* ViewController.swift */,
 				666DAC1223882EA600535C16 /* Main.storyboard */,
+				66C20C1F238BE5AC0047B446 /* cities.json */,
 				666DAC1523882EA900535C16 /* Assets.xcassets */,
 				666DAC1723882EAA00535C16 /* LaunchScreen.storyboard */,
 				666DAC1A23882EAA00535C16 /* Info.plist */,
+				666DAC5423883F3700535C16 /* Cities */,
 			);
 			path = CleanTest;
 			sourceTree = "<group>";
@@ -126,6 +199,88 @@
 				666DAC3023882EAA00535C16 /* Info.plist */,
 			);
 			path = CleanTestUITests;
+			sourceTree = "<group>";
+		};
+		666DAC5423883F3700535C16 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				666DAC4823883F3000535C16 /* CityListPresenter.swift */,
+				666DAC4923883F3000535C16 /* CityListWorker.swift */,
+				666DAC4A23883F3000535C16 /* CityListRouter.swift */,
+				666DAC4B23883F3000535C16 /* CityListModels.swift */,
+				666DAC4C23883F3000535C16 /* CityListViewController.swift */,
+				666DAC4D23883F3000535C16 /* CityListInteractor.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		666DAC6223883F7C00535C16 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				666DAC652388463F00535C16 /* Network */,
+				666DAC6323883F9D00535C16 /* Network.swift */,
+				666DACB5238B364400535C16 /* FlightTableViewCell.swift */,
+				666DACB6238B364400535C16 /* FlightTableViewCell.xib */,
+				66C20C19238BD0D30047B446 /* UIView+Pin.swift */,
+				66C20C1D238BE36A0047B446 /* CityWorker.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		666DAC652388463F00535C16 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		666DAC8B238B1B2D00535C16 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				666DAC8C238B1B5300535C16 /* ContainerPresenter.swift */,
+				666DAC8D238B1B5300535C16 /* ContainerWorker.swift */,
+				666DAC8E238B1B5300535C16 /* ContainerRouter.swift */,
+				666DAC8F238B1B5300535C16 /* ContainerModels.swift */,
+				666DAC90238B1B5300535C16 /* ContainerViewController.swift */,
+				666DAC91238B1B5300535C16 /* ContainerInteractor.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		666DAC98238B1B6600535C16 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				666DAC99238B1B7F00535C16 /* WeatherPresenter.swift */,
+				666DAC9A238B1B7F00535C16 /* WeatherWorker.swift */,
+				666DAC9B238B1B7F00535C16 /* WeatherRouter.swift */,
+				666DAC9C238B1B7F00535C16 /* WeatherModels.swift */,
+				666DAC9D238B1B7F00535C16 /* WeatherViewController.swift */,
+				666DAC9E238B1B7F00535C16 /* WeatherInteractor.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		666DACB1238B1BA200535C16 /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				666DACA5238B1B9900535C16 /* FlightPresenter.swift */,
+				666DACA6238B1B9900535C16 /* FlightWorker.swift */,
+				666DACA7238B1B9900535C16 /* FlightRouter.swift */,
+				666DACA8238B1B9900535C16 /* FlightModels.swift */,
+				666DACA9238B1B9900535C16 /* FlightViewController.swift */,
+				666DACAA238B1B9900535C16 /* FlightInteractor.swift */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		666DACB2238B295700535C16 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				666DACB3238B297F00535C16 /* FlightAPI.swift */,
+				666DAC74238869B300535C16 /* WeatherResponse.swift */,
+				66C20C1B238BDAAD0047B446 /* WeatherAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				666DAC1923882EAA00535C16 /* LaunchScreen.storyboard in Resources */,
+				66C20C20238BE5AD0047B446 /* cities.json in Resources */,
+				666DACB8238B364400535C16 /* FlightTableViewCell.xib in Resources */,
 				666DAC1623882EA900535C16 /* Assets.xcassets in Resources */,
 				666DAC1423882EA600535C16 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +416,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C20C1C238BDAAD0047B446 /* WeatherAPI.swift in Sources */,
+				666DACB4238B298000535C16 /* FlightAPI.swift in Sources */,
 				666DAC1123882EA600535C16 /* ViewController.swift in Sources */,
+				666DAC9F238B1B7F00535C16 /* WeatherPresenter.swift in Sources */,
+				66C20C1E238BE36A0047B446 /* CityWorker.swift in Sources */,
 				666DAC0D23882EA600535C16 /* AppDelegate.swift in Sources */,
+				666DAC96238B1B5300535C16 /* ContainerViewController.swift in Sources */,
+				666DAC6423883F9D00535C16 /* Network.swift in Sources */,
+				666DACAE238B1B9900535C16 /* FlightModels.swift in Sources */,
+				666DAC95238B1B5300535C16 /* ContainerModels.swift in Sources */,
+				666DAC5323883F3000535C16 /* CityListInteractor.swift in Sources */,
+				666DAC94238B1B5300535C16 /* ContainerRouter.swift in Sources */,
+				666DACA2238B1B7F00535C16 /* WeatherModels.swift in Sources */,
+				666DACB0238B1B9900535C16 /* FlightInteractor.swift in Sources */,
+				666DACAF238B1B9900535C16 /* FlightViewController.swift in Sources */,
+				666DACAD238B1B9900535C16 /* FlightRouter.swift in Sources */,
+				666DACA4238B1B7F00535C16 /* WeatherInteractor.swift in Sources */,
+				666DAC5123883F3000535C16 /* CityListModels.swift in Sources */,
+				666DAC75238869B500535C16 /* WeatherResponse.swift in Sources */,
+				666DAC97238B1B5300535C16 /* ContainerInteractor.swift in Sources */,
+				666DACAB238B1B9900535C16 /* FlightPresenter.swift in Sources */,
+				666DACAC238B1B9900535C16 /* FlightWorker.swift in Sources */,
+				666DACB7238B364400535C16 /* FlightTableViewCell.swift in Sources */,
+				666DAC93238B1B5300535C16 /* ContainerWorker.swift in Sources */,
+				66C20C1A238BD0D30047B446 /* UIView+Pin.swift in Sources */,
+				666DACA0238B1B7F00535C16 /* WeatherWorker.swift in Sources */,
+				666DAC5223883F3000535C16 /* CityListViewController.swift in Sources */,
+				666DAC4F23883F3000535C16 /* CityListWorker.swift in Sources */,
+				666DAC5023883F3000535C16 /* CityListRouter.swift in Sources */,
 				666DAC0F23882EA600535C16 /* SceneDelegate.swift in Sources */,
+				666DACA1238B1B7F00535C16 /* WeatherRouter.swift in Sources */,
+				666DACA3238B1B7F00535C16 /* WeatherViewController.swift in Sources */,
+				666DAC4E23883F3000535C16 /* CityListPresenter.swift in Sources */,
+				666DAC92238B1B5300535C16 /* ContainerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR2JG74BML;
 				INFOPLIST_FILE = CleanTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR2JG74BML;
 				INFOPLIST_FILE = CleanTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

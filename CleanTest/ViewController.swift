@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if let containerVC = children.first as? ContainerViewController {
+            let fvc = FlightViewController(nibName: nil, bundle: nil)
+            let fvc2 = FlightViewController(nibName: nil, bundle: nil)
+            containerVC.addChild(fvc)
+            
+            if let wvc = storyboard?.instantiateViewController(withIdentifier: "WeatherViewController") as? WeatherViewController{
+                fvc.delegate = wvc
+            containerVC.addChild(wvc)
+        }
+        }
     }
 
 
